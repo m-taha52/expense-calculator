@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title> Expense Tracker </title>
+        <link rel="stylesheet" href="ex.css">
+
+    </head>
+    <script src="ex.js"> </script>
+    <body>
+      
+        <h2> Expense Tracker </h2>
+        <div class="container"> 
+            <h4> Your Net Income </h4>
+            <h1 id="balance"><span id="val2"> </span></h1>
+
+            <div class="inc-exp-container">
+                <div>
+                    <h4> income </h4>
+                    <p id="money-plus" class="money plus"><span id="val"> $0.00</span></p>
+                </div>
+                <div>
+                    <h4> expense </h4>
+                    <p id="money-minus" class="money minus"><span id="val1"> $0.00 </p>
+                </div>
+            </div>
+            <div class="center">
+            <h4> Incomes And Expenses</h4>
+        </div>
+            
+                <div class="grid-container-1 center">
+               <div >
+                   <table id="table"  border="1" cellspacing="0" cellpadding="0" rowspacing="0">
+                       <th> Incomes</th>
+
+                   </table>
+                 </div>
+               <div> 
+                <table id="table1"  border="1" cellspacing="0" cellpadding="0" rowspacing="0">
+                    <th> Expenses</th>
+                </table>
+               </div>
+            </div>
+            <!--    <li class="minus">Cash <span> $-400 </span> <button class="delete-btn">x </button></li> --> 
+            </ul>  
+            
+      
+        </div>
+            <form id="form">
+              <div class="grid-container">
+                  
+                  <div class="income">
+                      Income
+                      <input type="text" id="income01" class="form_control  " value="Salary">
+                       <input type="number" id="income1" class="form_control" value="0">
+
+                       Income <input type="text" id="income02" class="form_control" value="Rent">
+                       <input type="number" id="income2" class="form_control" value="0">
+
+                      Income <input type="text" id="income03" class="form_control" value="Tax Refund">
+                       <input type="number" id="income3" class="form_control" value="0">
+
+                      Income <input type="text" id="income04" class="form_control" value="Commission">
+                       <input type="number" id="income4" class="form_control" value="0">
+
+                      Income <input type="text" id="income05" class="form_control" value="Debts Repaid">
+                       <input type="number" id="income5" class="form_control" value="0">
+
+                      Income <input type="text" id="income06" class="form_control" value="Dividends on Investments">
+                       <input type="number" id="income6" class="form_control" value="0">     
+                  </div>
+                  
+                  <div class="expense">
+
+                  Expense  <input type="text" id="expense01" class="form_control" value="Education">
+                    <input type="number" id="expense1" class="form_control" value="0">
+
+                    Expense <input type="text" id="expense02" class="form_control" value="Rent Payable">
+                    <input type="number" id="expense2" class="form_control" value="0">
+
+                   Expense <input type="text" id="expense03" class="form_control" value="Taxes">
+                    <input type="number" id="expense3" class="form_control" value="0">
+
+                   Expense <input type="text" id="expense04" class="form_control" value="LIC">
+                    <input type="number" id="expense4" class="form_control" value="0">
+
+                   Expense <input type="text" id="expense05" class="form_control" value="Provident Fund">
+                    <input type="number" id="expense5" class="form_control" value="0">
+
+                   Expense <input type="text" id="expense06" class="form_control" value="Car and House Supplies">
+                    <input type="number" id="expense6" class="form_control" value="0">     
+              </div>
+        
+            </form>
+            <input type="button"   onclick="checkBalance()" value=" Balance Here">
+          
+    </body>
+
+</html>
